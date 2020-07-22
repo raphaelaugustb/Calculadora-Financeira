@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Pridi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,body{
+    height:100%;
+    background-color: #ebedee;
+    font-family: 'Lato', sans-serif
+}
+
+header h1{
+    text-align: center;
+    margin:60px 0 0 0;
+    color: rgb(5, 5, 5);
+    font-family: 'Roboto Slab', serif;
+    font-size:25px;
+}
+
+div.my-money{
+    margin:50px auto 0 auto;
+    width:500px;
+    height:80px;
+    font-family: 'Roboto Slab', serif;
+   
+}
+
+div.my-money h1{
+    font-size:15px;
+}
+
+div.my-money span{
+    font-size:37px;
+    color: #2677e2;
+    font-family: 'Roboto Slab', serif;
+}
+
+div.account-money{
+    width:500px;
+    height:120px;
+    margin:20px auto 0 auto;
+    background-color: white;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius:10px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+div.bar{
+ width:2px;
+ height:80px;
+ background-color: rgb(209, 209, 209);
+align-self: center;
+
+}
+
+div.input-in{
+    display: flex;
+    flex-direction: column;
+    margin:28px 0 0 40px;
+    
+}
+
+#input{
+    font-family: 'Roboto Slab', serif;
+ }
+
+#positive{
+    font-family: 'Roboto Slab', serif;
+    color: rgb(86, 199, 120);
+    font-size: 20px 
+}
+
+div.input-out{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    margin:28px 40px 0 0px;
+}
+
+#negative{
+font-family: 'Roboto Slab', serif;
+color: rgb(214, 100, 55);
+font-size: 20px;
+}
+
+div.transactions{
+    margin:50px auto;
+    height: auto;
+    width:500px;
+
+}
+
+div.transactions h1{
+    font-family: 'Source Serif Pro', serif;
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+div.horizontal-bar{
+    height:2px;
+    width:500px;
+    background-color:rgb(209, 209, 209)
+}
+
+.all-transaction{
+    height: auto;
+}
+
+.span-transaction{
+    margin:20px 0 10px 0;
+    display: block;
+    font-weight:500;
+    font-size:17px;
+}
+
+#span-transaction{
+    margin:20px 0 5px 0;
+    display: block;
+    font-weight:500;
+    font-size:17px;
+}
+.span-transaction-about{
+    margin:0px 0 5px 0;
+    display: block;
+    font-weight:500;
+    font-size:17px;
+}
+.input-transaction{
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    width:500px;
+    height:30px;
+    font-size:16px;
+    padding:20px;
+}
+
+#add-transaction{
+    border: 1px solid white;
+    border-radius: 10px;
+    width:500px;
+    height:40px;
+    font-size:16px;
+    padding:8px 0 10px 0;
+    margin:10px 0 0 0;
+    cursor: pointer;
+    color: white;
+    background-color: #a34fdb;
+    font-family: 'Roboto Slab', serif;
+}
+
+.transactions li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .transactions li.plus {
+    border-right: 5px solid #2ecc71;
+  }
+  
+  .transactions li.minus {
+    border-right: 5px solid #c0392b;
+  }
+
+  .delete-btn {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+    height:40px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .transactions li:hover .delete-btn {
+    opacity: 1;
+  }
+  
+

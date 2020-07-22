@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App Finanças</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Controle de despesas</h1>
+
+        
+   </header>
+
+   <div class="my-money">
+       <h1>SALDO ATUAL</h1>
+       <span id="balance">R$: 0.00</span>
+   </div>
+
+   <div class="account-money">
+
+    <div class="input-in">
+       <span id="input">Receitas</span>
+       <span id="positive">R$: 0.00</span>    
+
+    </div>
+    
+    <div class="bar"></div>
+      
+        <div class="input-out">
+        <span id="out">Despesas</span>
+        <span id="negative">R$: 0.00</span>
+      </div> 
+   </div>
+
+   <div class="transactions">
+       <h1>Transações</h1>      
+       <div class="horizontal-bar"></div>
+       <ul class="transactions" id="transaction">
+
+       </ul>
+
+   </div>
+   <form id="form" onsubmit="addTransaction()">
+        <div class="transactions">
+            <h1>Adicionar Transação</h1>      
+            <div class="horizontal-bar"></div>
+
+            <span class="span-transaction">Nome</span>
+            <input type="text" id="text" placeholder="Nome da transação" class="input-transaction">
+            
+            <span id="span-transaction">Valor</span>
+            <span class="span-transaction-about"> - Para Negativo e + Para Positivo</span>
+            <input type="text" id="amount" placeholder="Valor da transação" class="input-transaction">
+            
+            <button id="add-transaction" >Adicionar</button>
+
+        </div>
+    </form>
+</body>
+
+</html>
+
+<script src="./javascript/script.js"></script>
