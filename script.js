@@ -96,7 +96,7 @@ function addTransaction(){
     const Transaction = {
         id:generateID() , 
         name:inputTransactionName.value , 
-        amount:Number(inputTransactionAmount.value)
+        amount:Number(inputTransactionAmount.value.replace(",","."))
     }
     transactions.push(Transaction)
     add()
